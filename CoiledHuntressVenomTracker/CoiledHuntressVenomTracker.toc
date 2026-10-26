@@ -1,0 +1,10 @@
+## Interface: 120100, 120105
+## Title: The Coiled Huntress Venom Tracker
+## Notes: Movable tracker for the Venom stack on The Coiled Huntress (item 244790) and Coiled Filament currency
+## Author: Nightwalker559
+## Version: 1.0.6
+## X-Curse-Project-ID: 1667704
+## OptionalDeps: ElvUI
+## SavedVariables: NWVenomTrackerDB
+
+CoiledHuntressVenomTracker.lua
