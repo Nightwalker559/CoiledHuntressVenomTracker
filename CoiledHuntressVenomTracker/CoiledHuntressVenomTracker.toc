@@ -1,4 +1,4 @@
-## Interface: 120100, 120105
+## Interface: 120100, 120105, 120107
 ## Title: The Coiled Huntress Venom Tracker
 ## Notes: Movable tracker for the Venom stack on The Coiled Huntress (item 244790) and Coiled Filament currency
 ## Author: Nightwalker559
