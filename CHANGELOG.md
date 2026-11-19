@@ -1,5 +1,8 @@
 # Changelog
 
+## 1.0.7
+- TOC: added Interface 12.1.7 (120107)
+
 ## 1.0.6
 - Fixed a false "couldn't find 'Toxin'" chat warning right after login: the tooltip is filled in lazily, so the warning now only appears if the keyword line stays missing for 5 seconds (and the timer resets when the rod is unequipped)
 
