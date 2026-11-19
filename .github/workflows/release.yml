@@ -1,5 +1,5 @@
 # Builds the addon zip and uploads it to CurseForge when a tag is pushed.
-# The tag name is the version (e.g. 1.0.6, no "v"); a tag containing "alpha" or "beta"
+# The tag name is the version (e.g. 1.0.7, no "v"); a tag containing "alpha" or "beta"
 # is uploaded as such, anything else as a release. Needs the repository secret
 # COILEDHUNTRESS (GITHUB_TOKEN is provided by GitHub). The project ID comes from the TOC.
 name: Package and release
@@ -26,7 +26,7 @@ jobs:
 
       - name: Changelog of this version only
         # CurseForge shows CHANGELOG.md; cut it down to the section of the tag
-        # (1.0.6 -> "## 1.0.6", 1.1.0-alpha2 -> "## 1.1.0 (alpha 2)").
+        # (1.0.7 -> "## 1.0.7", 1.1.0-alpha2 -> "## 1.1.0 (alpha 2)").
         run: |
           tag="${GITHUB_REF_NAME}"
           if [[ "$tag" =~ ^(.+)-(alpha|beta)([0-9]+)$ ]]; then
@@ -47,5 +47,5 @@ jobs:
       - name: Package and release
         uses: BigWigsMods/packager@v2
         with:
-          # File name and CurseForge label: CoiledHuntressVenomTracker_<tag> (e.g. CoiledHuntressVenomTracker_1.0.6).
+          # File name and CurseForge label: CoiledHuntressVenomTracker_<tag> (e.g. CoiledHuntressVenomTracker_1.0.7).
           args: -n "{package-name}_{project-version}:{package-name}_{project-version}"
