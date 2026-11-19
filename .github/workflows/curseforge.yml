@@ -2,7 +2,7 @@
 # The tag name is the version (e.g. 1.0.7, no "v"); a tag containing "alpha" or "beta"
 # is uploaded as such, anything else as a release. Needs the repository secret
 # COILEDHUNTRESS (GITHUB_TOKEN is provided by GitHub). The project ID comes from the TOC.
-name: Package and release
+name: Release to CurseForge
 
 on:
   push:
